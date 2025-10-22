@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "../services/api";
 import Navbar from "../components/Navbar";
 import WeeklyCommissions from "../components/WeeklyCommissions";
+import ShopCommissions from "../components/ShopCommisions";
 
 type Shop = {
   shop_id: string;
@@ -297,7 +298,7 @@ export default function Shops({ onLogout }: { onLogout: () => void }) {
           </table>
         </div>
 
-        {selectedShopId && <WeeklyCommissions shopId={selectedShopId} />}
+        {selectedShopId && <ShopCommissions shopId={selectedShopId} />}
       </div>
     </div>
   );
