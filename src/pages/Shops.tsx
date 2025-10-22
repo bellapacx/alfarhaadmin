@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "../services/api";
 import Navbar from "../components/Navbar";
-import WeeklyCommissions from "../components/WeeklyCommissions";
 import ShopCommissions from "../components/ShopCommisions";
 
 type Shop = {
